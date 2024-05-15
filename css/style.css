@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --color-black: #000000;
+  --color-orange: #EE3D1B;
+  --color-pink: #ED4C5C;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+section {
+  padding: 95px 0;
+}
+.flex {
+  display: flex;
+  column-gap: 30px;
+}
+header {
+  min-height: 780px;
+  background-image: url(../img/Bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+html{scroll-behavior: smooth;}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 160px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  color: #000000;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+/* header */
+.header {
+  padding-top: 44px;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  display: flex;
+  margin-top: 14px;
+}
+.logo img {
+  align-self: self-start;
+}
+.logo h4 {
+  margin-left: 10px;
+}
+.menu_item {
+  max-width: 485px;
+}
+.menu_item ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  /* margin-left: -95px; */
+}
+.menu_item li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menu_item li:last-child {
+  margin-right: 0;
+}
+.menu button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.menu button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.title {
+  text-align: center;
+  
+}
+.title_button {
+  text-align: center; 
+}
+.title button {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  color: #ED4C5C;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 56px;
+  border: none;
+  cursor: pointer;
+}
+.title_button button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.title h3 {
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 150%;
+  margin-top: 40px;
+}
+
+
+
+
+/* capability */
+.capability {
+  background-color: #fafafa;
+  min-height: 660px;
+}
+.capability h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 65px;
+}
+.capability__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+.capability__item {
+  position: relative;
+  border-radius: 8px;
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+.item1 {
+  background-image: url(../img/item1.png);
+}
+.item2 {
+  background-image: url(../img/item2.png);
+}
+.item3 {
+  background-image: url(../img/item3.png);
+}
+.capability__inside {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  width: 290px;
+  top: 150px;
+}
+.capability__inside h3 {
+  font-size: 18px;
+}
+.capability__inside p {
+  font-size: 12px;
+}
+.capability__inside a {
+  text-decoration: none;
+  color: #ed4c5c;
+  transition: 0.3s all;
+  font-size: 12px;
+}
+.capability__inside a:hover {
+  color: #af3944;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 65px 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-bottom: 200px;
+  }
+  .capability__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .capability__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 430px) {
+  .capability__item {
+    width: 100%;
+    padding: 0px;
+  }
+  .capability__inside {
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    left: 50%; 
+    transform:translateX(-50%); 
+  }
+  .capability__grid {
+    row-gap: 100px;
+  }
+}

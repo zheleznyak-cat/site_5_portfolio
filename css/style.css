@@ -299,14 +299,12 @@ p {
   margin-top: 50px;
 }
 /* slider */
-.slider {
-  background-color: #ED4C5C;
-}
 .slider_div {
   display: flex;
   justify-content: space-around;
   min-height: 500px;
   align-items: center;
+  background-color: #ED4C5C;
 }
 .slider {
   padding-top: 0;
